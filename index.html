@@ -22,7 +22,7 @@
             margin: 30px auto;
             padding: 50px 60px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border-top: 8px solid #0369a1; /* Thanh màu xanh dương chuyên nghiệp */
+            border-top: 8px solid #0369a1;
         }
 
         .section-header {
@@ -35,7 +35,7 @@
         .section-title {
             font-size: 1.1rem;
             font-weight: 800;
-            color: #0369a1; /* Màu chủ đạo */
+            color: #0369a1;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             white-space: nowrap;
@@ -66,7 +66,7 @@
 
         .tech-stack {
             font-size: 0.85rem;
-            color: #0891b2; /* Màu xanh lơ cho công nghệ */
+            color: #0891b2;
             font-style: italic;
             font-weight: 600;
         }
@@ -84,7 +84,6 @@
             list-style-type: none;
         }
 
-        /* Tùy chỉnh dấu gạch đầu dòng bằng màu sắc */
         li::before {
             content: "•";
             color: #0369a1;
@@ -96,9 +95,6 @@
 
         strong { color: #2d3748; }
 
-        .contact-link {
-            transition: color 0.2s;
-        }
         .contact-link:hover { color: #0369a1; text-decoration: underline; }
     </style>
 </head>
@@ -132,9 +128,20 @@
                 </div>
                 <ul>
                     <li><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Computer Architecture, Discrete Mathematics.</li>
-                    <li><strong>Certifications:</strong> IELTS 6.0 (Strong technical proficiency), Aptis ESOL B2.</li>
+                    <li><strong>Certifications:</strong> IELTS 6.0, Aptis ESOL B2.</li>
                     <li><strong>Focus:</strong> Data Engineering (ETL), Database Management (PostgreSQL).</li>
                 </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-title">Technical Skills</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="grid grid-cols-1 gap-2 text-[0.92rem] mb-4">
+                <p><strong>Languages:</strong> Python (Pandas, Selenium), SQL (PostgreSQL), C++, x86 Assembly.</p>
+                <p><strong>Technologies:</strong> Docker & Docker Compose, Git, GitHub Actions, REST APIs, Streamlit, Supabase, Kafka (Basic).</p>
             </div>
         </section>
 
@@ -189,28 +196,12 @@
             </div>
             <div class="content-item">
                 <div class="item-header">
-                    <span>Google Developer Student Clubs - PTIT (GDSC)</span>
+                    <span>GDGoC Community</span>
                     <span class="date-location">Sept. 2024 – Present</span>
                 </div>
-                <div class="flex justify-between items-baseline italic text-gray-700 text-sm mb-2">
-                    <span>Active Member</span>
-                    <span class="date-location">Hanoi, Vietnam</span>
-                </div>
                 <ul>
-                    <li>Engaged in technical workshops on System Design, Version Control (Git), and Software Development Life Cycle.</li>
-                    <li>Collaborated with peers in coding challenges to enhance algorithmic thinking and teamwork capabilities.</li>
+                    <li>Participated in workshops and technology events of the GDGoC community.</li>
                 </ul>
-            </div>
-        </section>
-
-        <section>
-            <div class="section-header">
-                <span class="section-title">Skills</span>
-                <div class="section-line"></div>
-            </div>
-            <div class="grid grid-cols-1 gap-2 text-[0.92rem]">
-                <p><strong>Languages:</strong> Python (Pandas, Selenium), SQL (PostgreSQL), C++, x86 Assembly.</p>
-                <p><strong>Technologies:</strong> Docker & Docker Compose, Git, GitHub Actions, REST APIs, Streamlit, Supabase, Kafka (Basic).</p>
             </div>
         </section>
     </div>
