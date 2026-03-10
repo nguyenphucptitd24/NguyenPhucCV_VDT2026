@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Hong Phuc - Portfolio CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #1a202c;
+            line-height: 1.5;
+        }
+
+        .cv-container {
+            background: white;
+            width: 210mm;
+            min-height: 297mm;
+            margin: 30px auto;
+            padding: 50px 60px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border-top: 8px solid #0369a1; /* Thanh màu xanh dương chuyên nghiệp */
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #0369a1; /* Màu chủ đạo */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            white-space: nowrap;
+        }
+
+        .section-line {
+            flex-grow: 1;
+            height: 1.5px;
+            background-color: #e2e8f0;
+            margin-left: 15px;
+        }
+
+        .content-item { margin-bottom: 16px; }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-weight: 700;
+            color: #2d3748;
+        }
+
+        .date-location {
+            font-size: 0.85rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            color: #0891b2; /* Màu xanh lơ cho công nghệ */
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        ul {
+            margin-top: 6px;
+            padding-left: 1.25rem;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 4px;
+            font-size: 0.92rem;
+            color: #4a5568;
+            list-style-type: none;
+        }
+
+        /* Tùy chỉnh dấu gạch đầu dòng bằng màu sắc */
+        li::before {
+            content: "•";
+            color: #0369a1;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        strong { color: #2d3748; }
+
+        .contact-link {
+            transition: color 0.2s;
+        }
+        .contact-link:hover { color: #0369a1; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-3 tracking-tight">NGUYEN HONG PHUC</h1>
+            <div class="flex justify-center items-center gap-4 text-sm text-gray-600 font-medium">
+                <span>📞 +84 336 775 698</span>
+                <span>|</span>
+                <a href="mailto:hongphuchy2006@gmail.com" class="contact-link">✉️ hongphuchy2006@gmail.com</a>
+                <span>|</span>
+                <a href="#" class="contact-link">🔗 nguyenphucptitd24</a>
+            </div>
+        </header>
+
+        <section>
+            <div class="section-header">
+                <span class="section-title">Education</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="content-item">
+                <div class="item-header">
+                    <span>Posts and Telecommunications Institute of Technology (PTIT)</span>
+                    <span class="date-location">Aug. 2024 – Present</span>
+                </div>
+                <div class="flex justify-between items-baseline italic text-gray-700 text-sm mb-2">
+                    <span>Bachelor of Information Technology (GPA: 3.28 / 4.0)</span>
+                    <span class="date-location">Hanoi, Vietnam</span>
+                </div>
+                <ul>
+                    <li><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Computer Architecture, Discrete Mathematics.</li>
+                    <li><strong>Certifications:</strong> IELTS 6.0 (Strong technical proficiency), Aptis ESOL B2.</li>
+                    <li><strong>Focus:</strong> Data Engineering (ETL), Database Management (PostgreSQL).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-title">Projects</span>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="content-item">
+                <div class="item-header">
+                    <span>Real-time Real Estate Price Tracker <span class="font-normal text-gray-400">|</span> <span class="tech-stack">Python, Selenium, PostgreSQL, Streamlit</span></span>
+                    <span class="date-location">Mar. 2026</span>
+                </div>
+                <ul>
+                    <li>Engineered an automated data ingestion bot by intercepting <strong>Hidden APIs</strong> for Vinhomes Smart City prices.</li>
+                    <li>Utilized <strong>Pandas</strong> for data cleaning, normalizing raw listings, and handling null values for consistent analysis.</li>
+                    <li>Architected an interactive Dashboard for price visualization, enabling real-time market trend monitoring.</li>
+                    <li>Optimized data persistence layer using <strong>SQLAlchemy</strong> for efficient PostgreSQL storage and retrieval.</li>
+                </ul>
+            </div>
+
+            <div class="content-item">
+                <div class="item-header">
+                    <span>Containerized Crypto ETL Pipeline <span class="font-normal text-gray-400">|</span> <span class="tech-stack">Docker, PostgreSQL, Python</span></span>
+                    <span class="date-location">Feb. 2026</span>
+                </div>
+                <ul>
+                    <li>Implemented <strong>Docker Compose</strong> to isolate and orchestrate independent components: Ingestion, Database, and UI.</li>
+                    <li>Ensured environment consistency and service isolation, facilitating seamless deployment across platforms.</li>
+                    <li>Designed and implemented PostgreSQL schemas for efficient time-series data storage and market trend analysis.</li>
+                </ul>
+            </div>
+
+            <div class="content-item">
+                <div class="item-header">
+                    <span>8086 Peripheral Control System <span class="font-normal text-gray-400">|</span> <span class="tech-stack">x86 Assembly, 8255A PPI</span></span>
+                    <span class="date-location">Nov. 2025</span>
+                </div>
+                <ul>
+                    <li>Programmed 8086 CPU to interface with peripheral hardware for real-time 7-segment LED display control.</li>
+                    <li>Applied <strong>Lookup Tables (LUT)</strong> to optimize memory usage and instruction execution speed for display rendering.</li>
+                    <li>Developed software-based delay mechanisms to stabilize scanning frequencies across multiple peripheral chips.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-title">Activities</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="content-item">
+                <div class="item-header">
+                    <span>Google Developer Student Clubs - PTIT (GDSC)</span>
+                    <span class="date-location">Sept. 2024 – Present</span>
+                </div>
+                <div class="flex justify-between items-baseline italic text-gray-700 text-sm mb-2">
+                    <span>Active Member</span>
+                    <span class="date-location">Hanoi, Vietnam</span>
+                </div>
+                <ul>
+                    <li>Engaged in technical workshops on System Design, Version Control (Git), and Software Development Life Cycle.</li>
+                    <li>Collaborated with peers in coding challenges to enhance algorithmic thinking and teamwork capabilities.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-header">
+                <span class="section-title">Skills</span>
+                <div class="section-line"></div>
+            </div>
+            <div class="grid grid-cols-1 gap-2 text-[0.92rem]">
+                <p><strong>Languages:</strong> Python (Pandas, Selenium), SQL (PostgreSQL), C++, x86 Assembly.</p>
+                <p><strong>Technologies:</strong> Docker & Docker Compose, Git, GitHub Actions, REST APIs, Streamlit, Supabase, Kafka (Basic).</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
